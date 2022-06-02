@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
     path('events/', include('Events.urls')),
+    path('__debug__/', include('debug_toolbar.urls')),
 ]
